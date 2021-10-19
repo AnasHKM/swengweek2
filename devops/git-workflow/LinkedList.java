@@ -10,6 +10,14 @@ class LinkedList{
             data = d;
         }
     }
+    public void printList(){
+        Node n = head;
+        while (n != null){
+            System.out.print(n.data+" ");
+            n = n.next;
+        }
+    }
+
     public void pushFront(int data){
         Node n  = new Node(data);
         n.next = head;
@@ -30,5 +38,6 @@ class LinkedList{
         LinkedList llist = createList(arr);
         llist.printList();
     }
-
 }
+
+
